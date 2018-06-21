@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fVo-FG-fqQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="yfg-PQ-Toq">
+            <objects>
+                <viewController id="fVo-FG-fqQ" customClass="SplashScreenViewController" customModule="SimonSaysTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gZ2-jO-yYg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lv-lP-sno">
+                                <rect key="frame" x="114" y="291" width="146" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Iwn-Uu-fOV"/>
+                                    <constraint firstAttribute="width" constant="146" id="Vgf-ee-Ers"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Play!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zwN-2D-doa"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el5-T2-aRu">
+                                <rect key="frame" x="0.0" y="70" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.1822328691" blue="0.1664781085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="U40-0s-pCy"/>
+                                    <constraint firstAttribute="height" constant="50" id="qwn-Su-YKU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mL6-ch-gJ8">
+                                <rect key="frame" x="325" y="174" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HHO-iZ-qZN"/>
+                                    <constraint firstAttribute="width" constant="50" id="WMO-O2-zH2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brd-r9-dgb">
+                                <rect key="frame" x="325" y="556" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.035294117647058823" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8Ix-fU-Jv1"/>
+                                    <constraint firstAttribute="height" constant="50" id="pyn-cL-bcb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-Pv-oaF">
+                                <rect key="frame" x="0.0" y="435" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.023529411764705882" green="1" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2Lp-40-F2P"/>
+                                    <constraint firstAttribute="height" constant="50" id="GNF-YJ-3oG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NKL-d1-cR5" firstAttribute="trailing" secondItem="mL6-ch-gJ8" secondAttribute="trailing" id="42o-7n-Yfi"/>
+                            <constraint firstItem="NKL-d1-cR5" firstAttribute="bottom" secondItem="Brd-r9-dgb" secondAttribute="bottom" constant="61" id="6Sv-xZ-7hr"/>
+                            <constraint firstItem="7lv-lP-sno" firstAttribute="centerY" secondItem="gZ2-jO-yYg" secondAttribute="centerY" id="Ei0-KL-oNl"/>
+                            <constraint firstItem="7lv-lP-sno" firstAttribute="centerX" secondItem="gZ2-jO-yYg" secondAttribute="centerX" id="Yx5-5V-Agf"/>
+                            <constraint firstItem="el5-T2-aRu" firstAttribute="top" secondItem="NKL-d1-cR5" secondAttribute="top" constant="50" id="cA6-ps-eZe"/>
+                            <constraint firstItem="7lv-lP-sno" firstAttribute="top" secondItem="mL6-ch-gJ8" secondAttribute="bottom" constant="67" id="cbD-Xt-pMD"/>
+                            <constraint firstItem="Ud1-Pv-oaF" firstAttribute="leading" secondItem="NKL-d1-cR5" secondAttribute="leading" id="ekp-kj-jNj"/>
+                            <constraint firstItem="el5-T2-aRu" firstAttribute="leading" secondItem="NKL-d1-cR5" secondAttribute="leading" id="gM0-v3-vtG"/>
+                            <constraint firstItem="Ud1-Pv-oaF" firstAttribute="top" secondItem="7lv-lP-sno" secondAttribute="bottom" constant="59" id="l8N-id-be4"/>
+                            <constraint firstItem="NKL-d1-cR5" firstAttribute="trailing" secondItem="Brd-r9-dgb" secondAttribute="trailing" id="vnh-oj-NFw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NKL-d1-cR5"/>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="Brd-r9-dgb" id="pHV-yA-K2w"/>
+                        <outlet property="greenView" destination="Ud1-Pv-oaF" id="wsq-g1-jv0"/>
+                        <outlet property="redButtonLeftConstraint" destination="gM0-v3-vtG" id="Mca-tQ-PUF"/>
+                        <outlet property="redView" destination="el5-T2-aRu" id="ShD-xG-IWw"/>
+                        <outlet property="splashScreenButton" destination="7lv-lP-sno" id="Mwm-3e-nBb"/>
+                        <outlet property="yellowView" destination="mL6-ch-gJ8" id="5mP-Qw-7h2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qf-sn-Lgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847.20000000000005" y="115.59220389805098"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

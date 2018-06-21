@@ -58,6 +58,8 @@ class GamePlay {
    
    private func pickRandomNumberBetween0And3() -> Int {
       return Int(arc4random_uniform(4))
+
+      // return Int.random(4)
    }
    
 }

@@ -14,6 +14,7 @@
 		D8AF0ED520DAC9F00065423A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AF0ED320DAC9F00065423A /* Main.storyboard */; };
 		D8AF0ED720DAC9F30065423A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AF0ED620DAC9F30065423A /* Assets.xcassets */; };
 		D8AF0EDA20DAC9F30065423A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AF0ED820DAC9F30065423A /* LaunchScreen.storyboard */; };
+		D8CF235A20DC3FC400946E70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF235920DC3FC400946E70 /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D8AF0ED620DAC9F30065423A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8AF0ED920DAC9F30065423A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8AF0EDB20DAC9F30065423A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8CF235920DC3FC400946E70 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				D8AF0ECF20DAC9F00065423A /* AppDelegate.swift */,
 				D8AF0ED120DAC9F00065423A /* ViewController.swift */,
+				D8CF235920DC3FC400946E70 /* SplashScreenViewController.swift */,
 				D80D4FAC20DB006B0071655A /* GamePlay.swift */,
 				D80D4FAA20DAFB230071655A /* Constants.swift */,
 				D8AF0ED320DAC9F00065423A /* Main.storyboard */,
@@ -152,6 +155,7 @@
 				D8AF0ED220DAC9F00065423A /* ViewController.swift in Sources */,
 				D80D4FAD20DB006B0071655A /* GamePlay.swift in Sources */,
 				D8AF0ED020DAC9F00065423A /* AppDelegate.swift in Sources */,
+				D8CF235A20DC3FC400946E70 /* SplashScreenViewController.swift in Sources */,
 				D80D4FAB20DAFB230071655A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
